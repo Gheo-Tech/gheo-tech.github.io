@@ -1,13 +1,15 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
     <title>Gheo Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://jenil.github.io/bulmaswatch/cyborg/bulmaswatch.min.css">
-    <link rel="stylesheet" href="/index-8b8b5c5c385a932.css">
+    <link rel="stylesheet" type="text/css" href="https://jenil.github.io/bulmaswatch/cyborg/bulmaswatch.min.css" />
+    <link rel="stylesheet" href="/index-8b8b5c5c385a932.css" integrity="sha384-+KJYhuftEQ0jY+6FU4O51aqckNdcbRxwNCr9hbArUCGbEOiv86vuuInr1hbMAkzs"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -34,9 +36,19 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
-<link rel="preload" href="/yew-portfolio-abb57a83fbe4fb14_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/yew-portfolio-abb57a83fbe4fb14.js"></head>
+<link rel="modulepreload" href="/yew-portfolio-417005fefb0bed63.js" crossorigin="anonymous" integrity="sha384-JnbHTvPj56C9XMMBeKgHnMndUss6NkXhzblXgPsQV6HeuEwDdWKIzsK5AewDrtJ6">
+<link rel="preload" href="/yew-portfolio-417005fefb0bed63_bg.wasm" crossorigin="anonymous" integrity="sha384-NfTOziSDTSYr5MgbDJb3b2V0XfsO94/J71xrw23xAySeLaRO11zJ1GQ2hgGgaQ3f" as="fetch" type="application/wasm"></head>
 
   <body>
+<script type="module">
+import init, * as bindings from '/yew-portfolio-417005fefb0bed63.js';
+const wasm = await init({ module_or_path: '/yew-portfolio-417005fefb0bed63_bg.wasm' });
 
-<script type="module">import init from '/yew-portfolio-abb57a83fbe4fb14.js';init('/yew-portfolio-abb57a83fbe4fb14_bg.wasm');</script></body></html>
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
